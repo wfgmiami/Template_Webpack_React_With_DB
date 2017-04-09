@@ -1,0 +1,14 @@
+{
+  "name": "react_template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall":"npm run webpack",
+    "webpack":"./node_modules/webpack/bin/webpack.js",
+    "start:dev":"npm run webpack -- -w & DATABASE_URL=postgres://localhost/startdb nodemon --ignore dist/ --ignore src/ server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
