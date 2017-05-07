@@ -6,7 +6,7 @@ const db = require('./db')
 app.use('/vendor', express.static(__dirname + '/node_modules'));
 app.use('/dist', express.static(__dirname + '/dist'));
 
-app.get('/',(req,res,send)=>{
+app.get('/',(req,res,next)=>{
   res.sendFile(__dirname + '/index.html');
 })
 
